@@ -11,7 +11,7 @@ from helper.list import list
 @Client.on_message(filters.private & filters.command(['start']))
 async def start(client, message):
           insert(int(message.chat.id))
-          await message.reply_text(text =f"Hello **{message.from_user.first_name }** \n\n __I can help you to translate your words to any language.__",reply_to_message_id = message.message_id , parse_mode="markdown", reply_markup=InlineKeyboardMarkup(            [                [                    InlineKeyboardButton("Support 🇮🇳" ,url="https://t.me/lntechnical") ],                 [InlineKeyboardButton("Subscribe 🧐", url="https://youtube.com/c/LNtechnical"),InlineKeyboardButton("How To Use",url = "https://youtu.be/dUYvenXiYKE") ]           ]        ) )
+          await message.reply_text(text =f"Hello **{message.from_user.first_name }** \n\n __I can help you to translate your words to any language.__",reply_to_message_id = message.message_id , parse_mode="markdown", reply_markup=InlineKeyboardMarkup(            [                [                    InlineKeyboardButton("🔌powered by:" ,url="https://t.me/LA2IZ") ],                 [InlineKeyboardButton("Subscribe🎁", url="https://t.me/llZ3Z"),InlineKeyboardButton("Instruction:",url = "https://youtu.be/dUYvenXiYKE") ]           ]        ) )
             
             
 @Client.on_message(filters.private & filters.text  )
