@@ -9,7 +9,7 @@ from helper.list import list
 @Client.on_message(filters.private &filters.command(['unset']))
 async def unsetlg(client,message):
 	unset(int(message.chat.id))
-	await message.reply_text("Successfully removed custom default language")
+	await message.reply_text("Successfully removed custom default language 🌚✅")
 
 @Client.on_message(filters.private &filters.command(['set']))
 async def setlg(client,message):
@@ -23,7 +23,7 @@ async def setlg(client,message):
     	    		try:
     	    			lgcd = list[cd]
     	    		except:
-    	    			await message.reply_text("❗️ This language Not available in My List \n Or Check Your spelling 😉",reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton("Check List 📑" ,url="https://raw.githubusercontent.com/lntechnical2/Google-Translater-/main/List/list.txt")]]))
+    	    			await message.reply_text("❗️ This language isn't available in my list. ☹️💔",reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton("Check List 📑" ,url="https://raw.githubusercontent.com/lntechnical2/Google-Translater-/main/List/list.txt")]]))
     	    			return
     	    		set(user_id,lgcd)
     	    		await message.reply_text(f"Successfully set custom default language **{cd}**")
